@@ -47,5 +47,8 @@ public class BasicNavigation {
 
 
         System.out.println("currentTitle= "+currentTitle);
+
+        //Get the current URL using selenium
+        String currentUrl =driver.getCurrentUrl();
     }
 }
