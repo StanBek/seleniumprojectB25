@@ -59,6 +59,9 @@ public class BasicNavigation {
 
         System.out.println("currentUrl= "+currentUrl);
 
+        //this will close currently opened window
+        driver.close();
+
 
     }
 }
