@@ -20,6 +20,8 @@ public class HomeTask {
         }
         System.out.println(actualURL);
 
+        System.out.println("===================================");
+
         String actualTitle = driver.getTitle();
 
         if(actualTitle.contains("Practice")){
