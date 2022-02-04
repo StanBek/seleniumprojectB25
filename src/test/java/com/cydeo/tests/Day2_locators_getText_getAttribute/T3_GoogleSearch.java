@@ -21,13 +21,24 @@ public class T3_GoogleSearch {
         driver.get("https://google.com");
 
         //3- Write “apple” in search box
+        //4- Click google search button(PRESS ENTER using Keys.ENTER)
         WebElement googleSearchBox = driver.findElement(By.name("q"));
         googleSearchBox.sendKeys("apple"+ Keys.ENTER);
 
 
-        //4- Click google search button
+
         //5- Verify title:
         //Expected: Title should start with “apple” word
+
+        String expectedInTitle = "apple";
+        String actualTitle = driver.getTitle();
+        if(actualTitle.startsWith(expectedInTitle)){
+            System.out.println("Title verification PASSED!");
+        }else{
+            System.out.println("Title verification FAILED!!!");
+        }
+
+        driver.close();
 
 
 
