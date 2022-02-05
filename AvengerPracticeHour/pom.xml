@@ -5,18 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cydeo</groupId>
-    <artifactId>seleniumprojectB25</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>AvengerPracticeHour</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>AvengerPracticeHour</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -25,12 +20,12 @@
             <version>3.141.59</version>
         </dependency>
 
-            <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-            <dependency>
-                <groupId>io.github.bonigarcia</groupId>
-                <artifactId>webdrivermanager</artifactId>
-                <version>5.0.3</version>
-            </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.0.3</version>
+        </dependency>
 
 
     </dependencies>
