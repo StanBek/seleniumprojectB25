@@ -33,7 +33,7 @@ public class Test4 {
             System.out.println("FAILED!!!");
         }
 
-       // driver.close();
+       driver.close();
 
     }
 
