@@ -1,10 +1,10 @@
 package com.cydeo.tests.Day3_cssSelector_xpath;
 
+import com.cydeo.utilities.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T1_locators_getText {
 
@@ -15,7 +15,7 @@ public class T1_locators_getText {
             //1- Open a Chrome browser
             //2- Go to: https://login1.nextbasecrm.com/
         WebDriverManager.chromedriver().setup();
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver= WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.get("https://login1.nextbasecrm.com/");
             //3- Enter incorrect username: “incorrect”
