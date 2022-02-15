@@ -10,7 +10,10 @@ import java.util.concurrent.TimeUnit;
 
 public class T3_continuationT2 {
 
+
+
     public static void main(String[] args){
+
 
         //TC #3: Utility method task for (continuation of Task2)
         //1. Open Chrome browser
@@ -21,6 +24,8 @@ public class T3_continuationT2 {
         //2. Go to https://practice.cydeo.com/radio_buttons
         driver.get("https://practice.cydeo.com/radio_buttons");
 
+        clickAndVerifyRadioButton(driver,"sport","football");
+        clickAndVerifyRadioButton(driver,"color","yellow");
         //Locate name ='sports' radio buttons and store them in List of Web Element
 
         List<WebElement> sportRadioButtons=driver.findElements(By.name("sport"));
