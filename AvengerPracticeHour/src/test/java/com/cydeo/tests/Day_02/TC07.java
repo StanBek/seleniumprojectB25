@@ -45,6 +45,6 @@ public class TC07 {
         }else{
             System.out.println("User name verify FAILED");
         }
-        driver.close();
+
     }
 }
